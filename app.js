@@ -42,7 +42,7 @@ app.use(isAuthenticated, routesTasks);
 app.use(error.e404);
 
 app.listen(port, () => {
-  console.log(`La aplicación está funcionando en http://localhost:${port}`);
+  console.log(`La aplicación está funcionando en el puerto ${port}`);
 });
 
 process.on("uncaughtException", (err) => {
